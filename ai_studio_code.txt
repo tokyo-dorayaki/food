@@ -1,6 +1,0 @@
-dist/
-├── index.html
-├── style.css
-├── script.js
-├── images/ (메인 이미지, 영양성분 등)
-└── video/ (작업 영상, 스팀 영상 등)
