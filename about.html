@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브랜드 스토리 | 도쿄베이커리</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="./index.html" class="logo">도쿄베이커리</a>
+            <div class="nav-links">
+                <a href="./index.html">홈</a>
+                <a href="./about.html" style="color: var(--brand-accent);">브랜드 스토리</a>
+                <a href="./nutrition.html">제품 정보</a>
+                <a href="tel:010-3780-1860">문의하기</a>
+            </div>
+            <a href="tel:010-3780-1860" class="nav-cta">주문하기</a>
+        </div>
+    </nav>
+
+    <section class="container" style="margin-top: 100px;">
+        <div class="reveal" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p class="accent" style="letter-spacing: 0.3em; text-transform: uppercase; font-weight: 700; margin-bottom: 20px;">The Process</p>
+            <h1 class="serif" style="font-size: 3.5rem; margin-bottom: 40px;">도라야끼 탄생의 기록</h1>
+        </div>
+
+        <div class="reveal" style="margin: 60px 0; border-radius: 30px; overflow: hidden; background: #000; aspect-ratio: 16/9;">
+            <video autoplay loop muted controls style="width: 100%; height: 100%; object-fit: cover;">
+                <source src="./video/process_video.mp4" type="video/mp4">
+                <source src="./video/steam.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+            <div class="reveal">
+                <h3 class="serif" style="font-size: 2rem; margin-bottom: 20px;">정성이 핵심입니다.</h3>
+                <p style="margin-bottom: 20px;">동으로 만든 가마솥에서 팥을 푹 익힙니다. 그냥 끓이는 게 아니고 계속 저어주어야 해요..🫠</p>
+                <p style="color: var(--brand-brown-light);">한국에서는 동으로 만든 가마솥을 구할 수 없어서 일본에서 직접 가져왔답니다! 일반 냄비나 솥에서 끓인 것과는 다른 특별한 맛을 느끼실 수 있어요.</p>
+            </div>
+            <div class="reveal" style="padding-top: 40px;">
+                <h3 class="serif" style="font-size: 2rem; margin-bottom: 20px;">촉촉한 빵의 미학</h3>
+                <p style="margin-bottom: 20px;">촉촉하면서도 부드러운 맛에 은은한 단맛이 느껴지는 도쿄베이커리만의 특별한 빵이 만들어집니다.</p>
+                <p style="color: var(--brand-brown-light);">절대 뻑뻑하지 않아요. 팥과 어우러져 완벽한 맛을 만듭니다. 다 만들어진 도라야끼는 검수과정 뒤 정성껏 포장됩니다.</p>
+            </div>
+        </div>
+
+        <div class="reveal" style="margin-top: 100px; text-align: center;">
+            <img src="./images/package_gift.png" alt="선물 세트" style="width: 100%; max-width: 600px; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.1);">
+        </div>
+    </section>
+
+    <footer style="background: var(--brand-brown-dark); color: #fff; border: none;">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2024 TOKYO BAKERY. 특별한 선물을 전하세요.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
