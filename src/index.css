@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif KR", serif;
+  --font-sans: "Pretendard", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-cream: #FDFBF7;
+  --color-brand-brown-light: #8D775F;
+  --color-brand-brown-dark: #4A3728;
+  --color-brand-accent: #C14911;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-cream text-brand-brown-dark font-sans;
+  }
+  
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+}

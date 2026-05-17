@@ -1,0 +1,8 @@
+{
+  "name": "수제 도라야끼: 달콤한 인연",
+  "description": "정성을 담은 프리미먼 수제 도라야끼 홍보 페이지",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
