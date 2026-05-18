@@ -360,7 +360,172 @@ nav {
 
 .info-table th { color: var(--brand-brown-light); font-weight: 500; width: 120px; }
 
-/* Footer */
+/* Modal Animations */
+@keyframes fadeInScale {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.modal-content {
+    animation: fadeInScale 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Branch Modal Specific Styles */
+.branch-modal-content {
+    padding: 0 !important;
+    overflow-x: hidden;
+    max-width: 800px !important;
+}
+
+.branch-hero {
+    position: relative;
+    height: 350px;
+}
+
+.main-store-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.branch-hero-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: #fff;
+}
+
+.branch-slider-container {
+    padding: 20px 40px;
+    background: #fff;
+}
+
+.branch-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding-bottom: 20px;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.branch-slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome/Safari */
+}
+
+.slide {
+    flex: 0 0 280px;
+    height: 200px;
+    scroll-snap-align: start;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    cursor: zoom-in;
+}
+
+.slide:hover {
+    transform: scale(1.03);
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.dot.active {
+    background: var(--brand-accent);
+    width: 20px;
+    border-radius: 10px;
+}
+
+.branch-info-details {
+    padding: 40px;
+    background: #fff;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding-bottom: 10px;
+}
+
+.info-row .label {
+    width: 100px;
+    font-weight: 700;
+    color: var(--brand-accent);
+}
+
+.info-row .val {
+    flex: 1;
+    color: var(--brand-brown-dark);
+}
+
+.info-desc {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--brand-brown-light);
+    border-left: 3px solid var(--brand-accent);
+    padding-left: 20px;
+}
+
+.branch-actions {
+    margin-top: 40px;
+}
+
+.map-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #03C75A; /* Naver Color */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.map-btn:hover {
+    transform: translateY(-3px);
+    background: #02a34a;
+}
+
+/* Lightbox Effect */
+.slide.zoomed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.5);
+    z-index: 3000;
+    width: 400px;
+    height: auto;
+    cursor: zoom-out;
+}
+
+/* Footer Middle */
 footer {
     background: var(--brand-cream);
     border-top: 1px solid rgba(0,0,0,0.1);
